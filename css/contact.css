@@ -1,0 +1,134 @@
+:root{
+    --main-color:#ea893c;
+    --main-color-alt:#1787e0;
+}
+*{
+    padding: 0;
+    margin: 0;
+    direction: rtl;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+html{
+    font-family: "Tajawal", sans-serif;;
+    scroll-behavior: smooth;
+}
+ui{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.contact-con{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+.contact-info{
+    width: 40%;
+    }
+    .contact-info h1{
+        font-weight: bold;
+        margin: 15px 0;
+        font-size: 30px
+    }
+    .contact-info p{
+      line-height: 2;
+      font-size: 25px;
+    }
+
+.contact-form{
+   width: 50%;
+   background-color: #f0f0f0;
+    border-radius: 40px;
+    padding: 10px;
+  
+}
+.form-input{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 12px;
+    /* gap: 9px; */
+}
+.form-input input
+{
+    display: flex;
+    flex-direction: column;
+    /* margin: 20px 0; */
+}
+input[type="text"], select, textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+.contact-massege{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+}
+.contact-massege textarea{
+    width: 100%;
+}
+.contact-but{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50px;
+    margin: 10px;
+    color: white;
+    background-color: var(--main-color);
+    border-radius: 10px 10px
+}
+.map{
+    position: relative;
+    margin-top: 20px;
+}
+.contact-us
+{
+    width: 350px;
+    height: 60%;
+    background-color: white;
+    border-radius: 10px 10px;
+    position: absolute;
+    left: 135px;
+    bottom: -275px;
+}
+/* small */
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+}
+/* mediam */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+}
+/* larg */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+    }
+   

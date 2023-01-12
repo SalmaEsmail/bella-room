@@ -1,0 +1,161 @@
+:root{
+    --main-color:#ea893c;
+    --main-color-alt:#1787e0;
+}
+*{
+    padding: 0;
+    margin: 0;
+    direction: rtl;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+html{
+    font-family: "Tajawal", sans-serif;;
+    scroll-behavior: smooth;
+}
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* start-adout */
+.about{
+    background-image: url("../img/pexels-pixabay-260046.jpg");
+    background-repeat:no-repeat ;
+   background-size:cover ;
+   height: 600px;
+}
+.about-con{
+  padding-top: 100px;
+}
+.about-con h1{
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #ea893c;
+}
+.about-con p{
+color: white;
+font-size: 30px;
+}
+.about-con a .button{
+  background-color: #333333;
+  color: white;
+  width: 230px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* end-adout */
+/* start room */
+.about-room 
+{
+  background-color: #f3f3f3;
+
+}
+.rooms-con{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap :10px;
+  margin-top: 5PX;
+  
+  /* height: ; */
+  
+}
+.room{
+
+  width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+}
+.room:hover{
+  border: 1px solid black;
+}
+/* end room */
+.mission-con{
+  display: flex;
+}
+.missim-info{
+  width: 45%;
+  padding-top: 30px;
+}
+.missim-info h1{
+  color: rgb(46, 131, 102);
+}
+.missim-info p{
+font-size: 25px;
+margin-top: 20px;
+ line-height: 2;
+}
+.missim-img{
+  width: 50%;
+}
+.missim-img img{
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+}
+/* mediam */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+}
+/* larg */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+    }
+    @media (max-width: 756px) {
+      .mission-con {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .missim-info,.missim-img{
+      width: 100%;
+    }
+     
+  }
+  
+  
+
+    @media (max-width: 490px) {
+      .about-con p {
+        font-size: 25px;
+       }
+    .room {
+      width: 40%;
+     
+  }
+}
+  @media (max-width: 362px) {
+    .about-con p {
+      font-size: 23px;
+  }
+ 
+  
+}
